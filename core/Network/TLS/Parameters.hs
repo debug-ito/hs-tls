@@ -40,6 +40,7 @@ type HostName = String
 
 type CommonParams = (Supported, Shared)
 
+-- | Parameters to configure a TLS client. For light-weight configuration, see also "Network.TLS.ClientConfig".
 data ClientParams = ClientParams
     { clientUseMaxFragmentLength    :: Maybe MaxFragmentEnum
       -- | Define the name of the server, along with an extra service identification blob.
